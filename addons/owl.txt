@@ -1,0 +1,23 @@
+Owl
+
+- Owlဆိုတာodooရဲ့javascript frameworkတစ်ခု,owlကိုအသုံးပြုပြီး frontendကိုချိန်းနိုင်
+
+Prerequisitie
+
+- javascript,odooရဲ့အလုပ်လုပ်ပုံသိရန်လို
+
+Odoo Frontend Structure
+
+- webclient => views => core => owl
+
+- WebClient က Odoo Backend Application ရဲ့ Main Entry Point ဖြစ်ပါတယ်။
+  Browser မှာ Login ဝင်ပြီးနောက် မြင်ရတဲ့ UI အားလုံးကို WebClient က စတင်ထိန်းချုပ်ပါတယ်။Eg(Navbar,app,menu,user menu)
+
+- Views ဆိုတာ Module တစ်ခုချင်းစီရဲ့ UI ကို ဖော်ပြပေးတဲ့ အစိတ်အပိုင်း ဖြစ်ပါတယ်။
+  Database ထဲက Data တွေကို User မြင်နိုင်အောင် Render လုပ်ပေးပါတယ်။
+
+- coreဆိုတာfrontendတစ်ခုလုံးမှာရှိတဲ့common functionတွေutilityတွေcomponentတွေသက်မှတ်ထားတဲ့နေရာ Eg (Registry,hooks)
+
+Single Page Application
+
+-BrowserကHtml Pageတစ်ခုထဲကိုပဲLoadလုပ်ပြီးactionတွေဖြစ်တဲ့အခါPageတစ်ခုလုံးကိုLoadမလုပ်ပဲလိုအပ်တဲ့dataကိုပဲserverကနေrequestလုပ်ပြီးUIကိုupdateလုပ်တဲ့Applicationအမျိုးအစားတစ်ခု
