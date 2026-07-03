@@ -21,3 +21,13 @@ Odoo Frontend Structure
 Single Page Application
 
 -BrowserကHtml Pageတစ်ခုထဲကိုပဲLoadလုပ်ပြီးactionတွေဖြစ်တဲ့အခါPageတစ်ခုလုံးကိုLoadမလုပ်ပဲလိုအပ်တဲ့dataကိုပဲserverကနေrequestလုပ်ပြီးUIကိုupdateလုပ်တဲ့Applicationအမျိုးအစားတစ်ခု
+
+Setup Environment
+
+- Odooကlast latest version 3မျိုးကိုofficially supportပေး
+
+Design Theme Repo
+
+-odooရဲ့website templateတွကိုစုစည်းပေးထားတဲ့repo
+-repoကနေtemplateတွေကိုcloneလုပ်ပြီးcustomizeလုပ်ပြီးအသုံးပြုနိုင်
+-templateအသစ်ဆောက်ချင်ရင်လဲfolder structureကိုလေ့လာနိုင်
