@@ -1,3 +1,4 @@
+Day 1 Of Learning Owl
 Owl
 
 - Owlဆိုတာodooရဲ့javascript frameworkတစ်ခု,owlကိုအသုံးပြုပြီး frontendကိုချိန်းနိုင်
@@ -5,6 +6,8 @@ Owl
 Prerequisitie
 
 - javascript,odooရဲ့အလုပ်လုပ်ပုံသိရန်လို
+
+Day 2 of Learning Owl
 
 Odoo Frontend Structure
 
@@ -31,3 +34,50 @@ Design Theme Repo
 -odooရဲ့website templateတွကိုစုစည်းပေးထားတဲ့repo
 -repoကနေtemplateတွေကိုcloneလုပ်ပြီးcustomizeလုပ်ပြီးအသုံးပြုနိုင်
 -templateအသစ်ဆောက်ချင်ရင်လဲfolder structureကိုလေ့လာနိုင်
+
+Day 3 Of Learning Owl
+
+Assets & Bundles
+
+Assets => Odooမှာassetsဆိုတာကweb browserရဲ့frontendမှာအလုပ်လုပ်ဖို့လိုအပ်တဲ့static file
+
+-Static Assets
+    static folderအောက်မှာ js,scss,css,htmlရေးဖို့အတွက်xml template fileတွေနဲ့fontနဲ့imagesတွေထည့်ဖို့အသုံးပြု
+
+Bundles => Odooမှာကfrontend,backendနဲ့အခြားသောsectionတွေအများကြီးရှိတယ်,userကsectionတစ်ခုကိုရောက်တိုင်းfilesတွေအကုန်လုံးကိုloadလုပ်မယ့်အစားလိုအပ်တဲ့filesတွေကိုပဲloadလုပ်အောင်စုစည်းပေးထားတဲ့package
+
+အသုံးအများဆုံးBundles5မျိုး => web.assets_common,web.assets_frontend,web.assets_backend,web.qunit_suite_tests,web.qunit_mobile_suite_tests
+
+-web.assets_common
+    Odoo frameworkတစ်ခုလုံးရဲ့အခြေခံအကျဆုံးfilesတွေကိုစုထားတဲ့bundles
+
+-web.assets_frontend
+    Public Websiteလိုမျိုးလူတိုင်းမြင်နိုင်တဲ့frontendပိုင်းတွေအတွက်စုထားတဲ့bundles
+
+-web.assets_backend
+    Odooရဲ့backend Uiပိုင်းအတွက််filesတွေကိုစုစည်းထားတဲ့bundles
+
+-web.quit_suite_tests
+    သာမန်Userတွေအသုံးပြုတဲ့အခါLoadမလုပ်ဘဲdeveloperတွေရေးထားတဲ့codeတွေေကာင်းကောင်းအလုပ်လုပ်လားဆိုတာကိုစစ်ဆေးချင်တဲ့အခါမှာအသုံးပြုတဲ့bundles(Desktop Viewမှာသာအလုပ်လုပ်)
+
+-web.qunit_mobile_suite_tests
+    Developerတွေရဲ့codeတွေmobile viewမှာအလုပ်လုပ်မလုပ်စစ်ဆေးသောfileတွေကိုစုစည်းပေးထားတဲ့bundles
+
+-Advence Bundling
+    ကိုယ့်ရဲ့custom fileတွေကိုဘယ်အချိန်မှာloadဖြစ်စေချင်လဲဆိုတာကိုသတ်မှတ်တဲ့အခါသုံး
+-append
+    assetsတွေကိုaddတဲ့အခါdefaultအနေနဲ့appendဖြစ်နောက်ဆုံးမှာloadဖြစ်စေချင်တဲ့အခါသုံး
+-before
+    assets fileကိုbundleထဲ့ဘယ်fileမလာခင်မှာloadဖြစ်စေချင်တဲ့အခါသုံး
+-prepend
+    assets filesကိုbundleရဲ့အစမှာaddချင်တဲ့အခါသုံး
+-after
+    assets filesကိုဘယ်fileလာပြီးမှloadဖြစ်စေချင်တယ်ဆိုပြီးသက်မှတ်ချင်တဲ့အခါသုံး
+-remove
+    bundleထဲကကိုယ်မလိုချင်တဲ့fileကိုဖယ်ထုတ်ချင်တဲ့အခါသုံး
+-replace
+    assets fileကိုbundleထဲကfileနေရာမှာအစားထိုးချင်တဲ့အခါသုံး
+-include
+    nested bundleအနေနဲ့အသုံးပြုခြင်း,အခြားbundleတစ်ခုလုံးကိုကိုယ့်ရဲ့bundleထဲမှာထည့်သွင်းအသုံးပြုချင်တဲ့အခါမှာသုံး
+
+
