@@ -80,4 +80,11 @@ Bundles => Odooမှာကfrontend,backendနဲ့အခြားသောsect
 -include
     nested bundleအနေနဲ့အသုံးပြုခြင်း,အခြားbundleတစ်ခုလုံးကိုကိုယ့်ရဲ့bundleထဲမှာထည့်သွင်းအသုံးပြုချင်တဲ့အခါမှာသုံး
 
+Day 4 Of Learning OWl
+
+Tips & Tricks
+
+-/*@odoo-module*/ => Odoo version 18နဲ့အထက်မှာတော့ထည့်စရာမလိုပေမယ့် 18အောက်မှာတော့JS Fileတွေထဲမှာ Odooကmoduleတစ်ခုအနေနဲ့အသိအမှတ်ပြုရန်ထည့်ပေးရန်လို
+
+
 
