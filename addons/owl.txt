@@ -86,5 +86,50 @@ Tips & Tricks
 
 -/*@odoo-module*/ => Odoo version 18နဲ့အထက်မှာတော့ထည့်စရာမလိုပေမယ့် 18အောက်မှာတော့JS Fileတွေထဲမှာ Odooကmoduleတစ်ခုအနေနဲ့အသိအမှတ်ပြုရန်ထည့်ပေးရန်လို
 
+Day 5 Of Learning Owl
+
+Component
+
+- တခြားclassတွေကextendလုပ်ပြီး ပြန်လည်အသုံးပြုနိုင်တဲ့classတစ်ခု,Html Pageတွေကိုတစ်ခုထဲရေးမယ့်အစားအပိုင်းတွေခွဲပြီးတော့ရေးနိုင်တဲ့အရာ
+- template
+    componentကနေUserတွေကိုfrontendမှာဘယ်လိုပြချင်လဲဆိုတာကိုရေးသားနိုင်တဲ့xml file
+-props
+    Parent Componentကနေ Child ComponentကိုDataပို့ချင်တဲ့အခါအသုံးပြုတဲ့နည်းလမ်းတစ်ခု
+
+How To Create Component?
+
+- xml fileထဲမှာtemplateတစ်ခုကြေညာရန်လို(eg => <templates><t t-name="">/<t></templates>)
+
+- js fileမှာ Componentကိုကြေညာရန်လို
+    import {Component} from @odoo/owl
+    export class () extends Component { static template = (template name) }
+
+Day 6 Of Learning Owl
+
+Odoo Backend Viewထဲသို့custom uiထည့်ခြင်း
+Odooရဲ့default backend viewထဲကိုcustom uiထည့်မယ်ဆိုရင်registryကိုအသုံးပြုရန်လို
+registryဆိုတာodooမှာcomponentတွေကိုcategoryအလိုက်သိမ်းဆည်းပေးတဲ့နေရာတစ်ခု
+အသုံးများသောregistryများ (fields,views,services,actions,view_widgets,systray,user_menuitems,formatters,parsers,effects,main_components)
+
+fields
+- field widgetတွေကိုregisterလုပ်ချင်တဲ့အခါသုံး (<field name="name" widget="widget name"/>)
+registry.category("fields").add(name, Component name)
+
+views
+-view typeအသစ်ကိုregisterလုပ်ချင်တဲ့အခါသုံး
+registry.category('views').add(name , Component name)
+
+services
+-odooမှာcustom serviceတွေaddချင်တဲ့အခါသုံး
+registry.category('services').add(name ,Component name)
+
+actions
+-client actionကိုသတ်မှတ်ချင်တဲ့အခါသုံး
+registry.category('actions').add(name, Component name)
+
+view_widgets
+- odooရဲ့viewထဲမှာcustom widgetတွေထည့်ချင်တဲ့အခါသုံး
+registry.category('view_widgets').add(name, Component name)
+
 
 
