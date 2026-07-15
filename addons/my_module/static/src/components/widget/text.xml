@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+    <t t-name="my_module.text_color" owl="1">
+        <span t-if="this.props.record.data.state === 'draft'" class="text-info">
+            <t t-esc="this.noteText"/>
+        </span>
+         <span t-if="this.props.record.data.state === 'sent'" class="text-primary">
+            <t t-esc="this.noteText"/>
+        </span>
+         <span t-if="this.props.record.data.state === 'sale'" class="text-success">
+            <t t-esc="this.noteText"/>
+        </span>
+         <span t-if="this.props.record.data.state === 'cancel'" class="text-danger">
+            <t t-esc="this.noteText"/>
+        </span>
+    </t>
+</templates>

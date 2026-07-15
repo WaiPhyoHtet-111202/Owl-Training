@@ -113,6 +113,9 @@ registryဆိုတာodooမှာcomponentတွေကိုcategoryအလိ
 
 fields
 - field widgetတွေကိုregisterလုပ်ချင်တဲ့အခါသုံး (<field name="name" widget="widget name"/>)
+- fieldတစ်ခုကိုဘယ်လိုrenderလုပ်ချင်လဲဆိုတာကိုသက်မှတ်ချင်တဲ့အခါသုံး
+- Odooမှာကfield widgetကိုအသုံးပြုတဲ့အခါမှာodooဘက်ကပို့ပေးလာတဲ့propsကိုလက်ခံဖို့အတွက်standardfieldpropsထည့်ရန်လို
+-ကိုယ်သုံးချင်တဲ့fieldမှာပါတဲ့အတိုင်းtypeကိုလည်းsupportedTypes = []နဲ့ထည့်ပေးရန်လို
 registry.category("fields").add(name, Component name)
 
 views
