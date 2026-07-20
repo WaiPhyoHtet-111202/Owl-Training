@@ -9,6 +9,7 @@
             <xpath expr="//field[@name='payment_term_id']" position="after">
                 <!-- Add your fields or attributes here -->
                 <field name="note_text" widget="textColorWidget"/>
+                <field name="testing"/>
             </xpath>
 
         </field>

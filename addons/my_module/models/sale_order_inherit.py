@@ -5,6 +5,7 @@ class SaleOrderInherit(models.Model):
     _description = "Sale Order Inherit"
 
     note_text = fields.Char(string="Note Text",compute="_compute_note_text")
+    testing = fields.Selection([('test','Test'),('advance','Advance')])
 
     @api.depends('state')
     def _compute_note_text(self):
